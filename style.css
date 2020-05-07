@@ -88,6 +88,7 @@
 
 
 #run{
+    font-family: 'Times New Roman', Times, serif;
     position: absolute;
     z-index: 999;
     margin: 0 auto;
@@ -97,7 +98,7 @@
     text-align: center;
     width: 60%;
     color: teal;
-    font-size: 5vw;
+    font-size: 6vw;
 
 }
 
