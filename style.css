@@ -1,200 +1,165 @@
+html, body, #main{
+    background: rgb(255, 253, 253);
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 150%;
+    line-height: 150%;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
 #main{
-    background-color: gray;
+    margin:0px;
+    padding: 0px;
+}
+#topnav{
+    background-color:rgb(11, 79, 79);
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 22px;
 }
 
-
-#topnav ul
-{       list-style-type: none;
-        background-color: turquoise;
-        margin: auto;
-        padding: 0px;
-        overflow: hidden;
-        font-size: 20px;
-}
-@media only screen and (max-width: 600px)
-{
-    p{
-        font-size: 10px;
-    }
-    #run p{
-
-        font-size: 10px;
-    }
-    h2{
-
-        font-size: 10px;
-
-    }
-    ul
-    {
-
-        font-size: 10px;
-    }
-    #image{
-
-        width: 100%;
-        margin: 6vh auto;
-        padding: 0;
-        max-width: 100%;
-
-    }
-    #img-div{
-
-        width: 100%;
-        margin: 6vh 0;
-        padding: 0;
-    }
-    #t
+#topnav ul{
     
-    
+    list-style: none;
+    display: flex;
+    height: 100%;
+    margin: 0px;
+     justify-content: end;
+    align-items: center;
+    padding: 0px;
+    justify-content: end;
+    align-items: center;
 }
-#topnav li 
-{
-    float: right;
+#topnav ul li {
+    text-align: end;
+    padding: 27px;
 
 }
-
-
-#topnav li a
-{
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      
+#topnav ul li a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 2px black;
 }
-
-#topnav a:hover{
-
-    background-color: #111;
-    color: turquoise;
+#topnav ul :hover{
+        color:rgb(11, 79, 79);
+        background-color: black;
 }
 #sec{
-
-    background-color: #111111;
-    
-    
+    text-align: center;
+    height: 680px;
+    background-color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 #coverpage{
-   
-    display: block;
-    width : 40%;
     height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #111;
-}  
-
-
+    width: auto;
+    
+}
 #run{
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 60%;
-    text-align: center;
-    width: 60%;
-    color: teal;
-    font-size: 6vw;
-
+    font-size: 60px;
+    color: rgb(11, 79, 79);
 }
-
-
-
 #thr{
-    background-color: lightblue;
-   
-    display: grid;
-    grid-template-columns: 35% 65%;
-    font-size: 30px;
-    padding: 20px;
-    padding-left: -20px;
-    
-    text-align: center;
-    
-
-
+    display: flex;
+    margin: 40px 90px;
+    padding: 40px 20px;
 }
-
+#img-div{
+    text-align: center;
+}
 #image{
-
-    max-width : 100%;
-    height: 100%;
-
-    max-width : 100%;
-  width: 100%
-    height: auto;
-  display: block;
-
-
-  
-    
-    
-
-    
-}  
-
-    
-
-#ab
-{   
-    
-    border-width:  1vw;
-    padding: 1vw;
-    margin-right: 1vw;
-    text-align: justify;
-
+    width: auto;
+    height: 500px;
 }
-
+#img-caption{
+    font-size: 16px; 
+}
 #tribute-info{
-
-    
-    padding: 20px;
-    text-align: justify;
-    line-height: 25px;
-    
-    margin-top: 0px;
-    background-color: lightblue;
- 
-
+    margin: 40px 90px;
+    padding: 40px 20px;
 }
-    
 
-#tribute-info h2
-{
-        text-align: center;
-        padding-top: -10px;
-        
+#tribute-info ul{
+    padding: 10px 0px;
+    margin: 0px;
 }
- #tribute-info ul
- {
-     padding: 20px;
-     margin: 30px;   
 
- }
- #more{
-
+#more{
     text-align: center;
- }
-
- footer{
-
+    padding-top: 50px;
+}
+#wiki{
+    width: 80px;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    color: white;
     text-align: center;
-    list-style-type: none;
-        background-color: turquoise;
-        margin: auto;
-        padding: 0px;
-        overflow: hidden;
-        font-size: 16px;
-        position: static;
-        
- }
- #wiki{
-    padding :10px;
-    width: 100px;
- }
+    border: black solid;
+    
+}
 
- 
+@media (max-width : 1150px){
+        #sec{
+            display: block;
+        }
+        #coverpage{
+            padding: 0px;
+            margin: 0px;
+            width: 480px;
+            height: 590px;
+        }
+        #run{
+            background-color: black;
+            margin: 10px;
+            padding: 0px 30px;
+        }
+        #thr{
+            display: block;
+            margin: 50px;
+        }
+        #tribute-info{
+            margin: 50px;
+
+        }
+    }
+    @media  (max-width : 700px ){
+       
+        #topnav ul{
+            
+            justify-content: space-between;
+        }
+
+        #coverpage{
+            width: 400px;
+            height: 500px;
+            padding-top: 30px;
+        }
+        #run{
+            font-size: 37px;
+        }
+        #thr, #tribute-info{
+            margin: 25px;
+        }
+        #img-div{
+            padding: 0px;
+            margin: 0px;
+        }
+        #image{
+            width: 320px;
+            height: 400px;
+          
+        }
+    
+    }
